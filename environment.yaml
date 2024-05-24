@@ -1,0 +1,19 @@
+name: server-rack
+channels:
+  - conda-forge
+  - nvidia
+  - pytorch
+dependencies:
+  - python=3.10
+  - pytorch
+  - pip
+  - pip:
+    - git+https://github.com/huggingface/transformers.git
+    - datasets
+    - nltk
+    - openai
+    - bs4
+    - langchain
+    - faiss-cpu
+    - tqdm
+    - bitsandbytes
