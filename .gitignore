@@ -1,1 +1,2 @@
 modal/deploy_vllm_docker.sh
+modal/__pycache__/*
