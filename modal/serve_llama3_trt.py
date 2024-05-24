@@ -36,7 +36,7 @@ tensorrt_image = tensorrt_image.apt_install(
 MODEL_DIR = "/root/model/model_input"
 #MODEL_ID = "meta-llama/Meta-Llama-3-8B-Instruct"
 MODEL_ID = "unsloth/Phi-3-medium-4k-instruct"
-MODEL_REVISION = "7840f95a8c7a781d3f89c4818bf693431ab3119a"  # pin model revisions to prevent unexpected changes!
+#MODEL_REVISION = "7840f95a8c7a781d3f89c4818bf693431ab3119a"  # pin model revisions to prevent unexpected changes!
 
 
 def download_model():
@@ -49,8 +49,8 @@ def download_model():
     snapshot_download(
         MODEL_ID,
         local_dir=MODEL_DIR,
-        ignore_patterns=["*.pt", "*.bin"],  # using safetensors
-        revision=MODEL_REVISION,
+        ignore_patterns=["*.pt", "*.bin"] #,  # using safetensors
+        #revision=MODEL_REVISION,
     )
     move_cache()
 
